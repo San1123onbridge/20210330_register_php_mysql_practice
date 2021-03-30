@@ -1,0 +1,27 @@
+.form_container {
+    /* background-color: cornflowerblue;     */
+    width: 1500;
+    height: 700;    
+    position: relative;
+    margin: auto;
+    padding: 30px;
+}
+
+.form_register {
+    /* background-color: darkgray; */
+    width: 40%;
+    height: 90%;
+    float: left;
+    margin-right: 5%;    
+}
+
+.form_signin {
+    /* background-color: darkorchid; */
+    width: 40%;
+    height: 90%;    
+    float: left;
+}
+
+.buttons {    
+    margin: 10px;
+}
