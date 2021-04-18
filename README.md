@@ -18,5 +18,5 @@ AWS:\
 www.example.com
 
 
+![0110](https://user-images.githubusercontent.com/63532421/115154159-0a25ca80-a0ac-11eb-9868-3c56add34f2e.PNG)
 
-![1242](https://user-images.githubusercontent.com/63532421/115153375-2b84b780-a0a8-11eb-818b-fb61304b7a7e.PNG)
