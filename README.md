@@ -4,7 +4,7 @@
 嘗試使用PHP-MySQL做會員註冊和登入系統 \
 使用 20210202_html-css-bootstrap_practice 註冊頁做練習。
 
-表單端可直接判別是否為具@的mail，PHP部分首先確認POST的值是否為空白，為非則使用trim()將值去空白並執行query。
+表單端可直接判別是否為具@的mail，PHP部分首先確認POST的值是否為空白，為非則使用trim()將值去空白並執行query。\
 query部分嘗試使用替換符及使用PDO物件確保做到安全讀寫資料庫。
 
 
