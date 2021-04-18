@@ -7,6 +7,9 @@
 - 未使用Session儲存登入資訊
 - 登出功能？
 
+AWS:\
+www.example.com
+
 
 
 ![1242](https://user-images.githubusercontent.com/63532421/115153375-2b84b780-a0a8-11eb-818b-fb61304b7a7e.PNG)
