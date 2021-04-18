@@ -1,10 +1,10 @@
 <html>
     <head>
-        <title>Allmight - Shoes</title>
+        <title>Allmight - Register</title>
         <meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=1">
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="changing/item_global.css" rel="stylesheet">
-        <link href="changing/test.css" rel="stylesheet">
+        <link href="changing/register.css" rel="stylesheet">
     </head>
     <body>
         <!--頂部開始-->
@@ -55,36 +55,51 @@
         <!--form_register in-->
         <div class="form_container">
             <div class="form_register">
-                <h1>Register</h1>                
-                <div>
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                </div>
-                <div>
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                </div>
-                <div class="buttons">
-                    <button type="button" class="btn btn-outline-primary">Send</button>
-                    <button type="button" class="btn btn-outline-secondary">Clear</button>
-                </div>                
+                <h1>Register</h1>
+                <form method="POST" action="./PHP/register.php">                
+                  <div>
+                      <label for="exampleInputEmail1">Email address</label>
+                      <input type="email" name="reg_ac" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  </div>                
+                  <div>
+                      <label for="exampleInputPassword1">Password</label>
+                      <input type="password" name="reg_pw" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                  </div>                
+                  <div>
+                    <label for="exampleInputPassword1">Re-enter password</label>
+                    <input type="password" name="reg_repw" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                  </div>
+                  <div class="msg_container" style="display: none;">
+                    <p>wrong alert message</p>
+                  </div>                  
+                  <div class="buttons">
+                      <button type="submit" class="btn btn-outline-primary">Send</button>
+                      <button type="reset" class="btn btn-outline-secondary">Clear</button>
+                  </div>
+              </form>                                                 
             </div>
             <div class="form_signin">
                 <h1>Sign up</h1>
-                <div>
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                </div>
-                <div>
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                </div>
-                <div class="buttons">
-                    <button type="button" class="btn btn-outline-primary">Send</button>
-                    <button type="button" class="btn btn-outline-secondary">Clear</button>
-                </div>
-            </div>
-        </div>
+                <form method="POST" action="./PHP/register.php">
+                  <div>
+                      <label for="exampleInputEmail1">Email address</label>
+                      <input type="email" name="signin_email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  </div>                  
+                  <div>
+                      <label for="exampleInputPassword1">Password</label>
+                      <input type="password" name="signin_pw" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                  </div>
+                  <div class="buttons">
+                      <button type="submit" class="btn btn-outline-primary">Send</button>
+                      <button type="reset" class="btn btn-outline-secondary">Clear</button>
+                  </div>
+                  <div class="msg_for_ac">
+                    <p>account:test1@gmail.com</p>
+                    <P>password:test2</P>
+                  </div>
+              </form>                       
+            </div>            
+        </div>        
         <!--form_resgister out-->
       
         <!--footer in-->
@@ -93,6 +108,6 @@
         </div>
         <!--footer out-->  
 
-
+    <!-- <div style="display:none">區塊中的內容</div> -->
     </body>
 </html>
